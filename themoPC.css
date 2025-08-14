@@ -1,0 +1,23 @@
+/* Themo Pc 400px */
+@media screen and (min-width: 400px){
+  .head {
+  width: var(--w100vw);
+  height: 280px;
+  background-image: url("head.png");
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+}
+
+/* Themo Pc 767px */
+@media screen and (min-width: 767px){
+  .head {
+    width: var(--w100vw);
+  height: 450px;
+  background-image: url("head.png");
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+}

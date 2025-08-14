@@ -1,0 +1,420 @@
+/* Nguyễn Thị Thảo Nhi */
+/* Dev Thực hiện : No longer Exists Exists */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --w100vw: 100vw;
+  --h100vh: 100vh;
+  --auto: auto;
+  --max: 100%;
+  --mobile: 400px;
+  --pc767px: 767px;
+  --center: center;
+  --flex: flex;
+  --sezi50: 50px;
+  --sezi35: 35px;
+  --sezi150: 150px;
+  --none: none;
+  --block: block;
+  --color-a259: #a259ff;
+  --color-462E61: #462E61;
+  --color-b0: #845ec2;
+  --color-b1: #845ec2;
+  --color-b2: #fbeaff;
+  --color-b3: #b39cd0;
+  --color-b4: #4b4d52;
+  --color-b5: #333333;
+  
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* container */
+.container
+{
+  margin: 0 var(--auto);
+}
+
+/* container-max */
+.container-max 
+{
+  --w110: 170vh;
+  width: var(--w100vw);
+  height: var(--h140vh);
+}
+
+/* container-head-x */
+.container-head-x 
+{
+  background: whitesmoke;
+  height: 55px;
+  width: var(--w100vw);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  transition-duration: 0.6s;
+}
+
+/* themo-UxUi */
+.themoUxUi 
+{
+  display: var(--flex);
+  margin-top: .5rem;
+}
+
+.themoUxUi > img 
+{
+  width: var(--sezi35);
+  height: var(--sezi35);
+  border-radius: var(--max);
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.themoUxUi > .theme-b 
+{
+  margin-top: .5rem;
+  font: 700;
+  font-size: 15px;
+  font-family: bold;
+  font-weight: 700;
+}
+
+/* border */
+.border 
+{
+  
+}
+
+/* header */
+.head 
+{
+  width: var(--w100vw);
+  height: 200px;
+  background-image: url("head.png");
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* avatar */
+.avatar
+{
+  margin-top: -5.5rem;
+  position: relative;
+}
+
+.avatar > .avt 
+{
+  width: var(--sezi150);
+  height: var(--sezi150);
+  border-radius: var(--max);
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+}
+
+.avatar > .khung 
+{
+  --sezi170: 220px;
+  width: var(--sezi170);
+  height: var(--sezi170);
+  border-radius: var(--max);
+  position: absolute;
+  top: -2rem;
+  left: -1.3rem;
+}
+
+/* name */
+.name 
+{
+  margin-left: .4rem;
+  margin-top: 11.5rem;
+}
+
+.name > .h2-name
+{
+  font: 700;
+  font-size: var(--auto);
+  font-family: bold;
+  font-weight: 700;
+}
+
+/* đính kèm txt */
+.tss 
+{
+  margin-top: .5rem;
+  margin-left: .3rem;
+}
+
+.span 
+{
+  font: 700;
+  font-size: 13px;
+  font-family: bold;
+  font-weight: 7000;
+  display: var(--block);
+}
+
+/* giới thiệu bản thân */
+.gioi-thieu 
+{
+  margin-top: 2rem;
+  margin-left: .5rem;
+}
+
+.h3 
+{
+  margin-bottom: .5rem;
+}
+
+.div 
+{
+  margin-top: 1rem;
+}
+
+.div > li {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: .5rem;
+}
+
+.div > p {
+  display: var(--flex);
+  flex-wrap: wrap;
+}
+
+/* Link liên kết */
+.btn-icon 
+{
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.h4 
+{
+  margin-bottom: 1rem;
+  margin-left: .5rem;
+}
+
+.db 
+{
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.db > div {
+  width: var(--auto);
+  height: 35px;
+  background: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  padding: 2px;
+  color: #333333;
+  font: 700;
+  font-size: 15px;
+  font-family: bold;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 2px #33333333;
+}
+
+.db > div:hover 
+{
+  color: crimson;
+  border: 1px solid crimson;
+}
+
+/* menu */
+.menu 
+{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: var(--w100vw);
+  height: var(--auto);
+  background: white;
+  justify-content: space-around;
+}
+
+.menu > div > i
+{
+  display: var(--block);
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 1.5rem;
+  font-size: 20px;
+  filter: drop-shadow(0 0 2px #0099ff);
+  color: #0099ff;
+}
+
+.menu > div > span 
+{
+  margin-bottom: 1rem;
+  color: #333333;
+  font: 700;
+  font-size: 14px;
+  font-family: bold;
+  font-weight: 7000;
+}
+
+.menu > div:hover > span
+{
+  color: var(--color-a259);
+}
+
+.menu > div:hover > i
+{
+  color: var(--color-a259);
+  filter: none;
+}
+
+
+/* Sezi mon themo scroll head */
+.sezi-monthemo 
+{
+  transition-duration: 0.9s;
+  opacity: 1;
+  filter: drop-shadow(0 0 40px #cccccccc);
+}
+
+/* coding code mã nguồn */
+.code 
+{
+  width: var(--w100vw);
+  height: var(--auto)
+  background: whitesmoke;
+  margin-top: 1rem;
+  display: var(--flex);
+  flex-wrap: wrap;
+}
+
+.tab
+{
+  width: 300px;
+  height: var(--auto);
+  margin-left: 2rem;
+  background: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px #cccccccc;
+}
+
+.tab > h3
+{
+  color: var(--color-a259);
+  font: 700;
+  font-size: 17px;
+  font-family: bold;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: var(--center);
+}
+
+.tab > p 
+{
+  flex-wrap: wrap;
+  text-align: var(--center);
+}
+
+.img 
+{
+  text-align: var(--center);
+  margin-top: 1rem;
+}
+
+.img > img 
+{
+  width: var(--x250);
+  height: var(--x250);
+  --x250: 250px;
+  border-radius: 5px;
+}
+
+.btn
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn > button
+{
+  width: 100px;
+  height: 35px;
+}
+
+#supot 
+{
+  background: crimson;
+  border: 2px solid crimson;
+  border-radius: 5px;
+  color: #fff;
+  font: 700;
+  font-family: bold;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#supot:hover, #coinlog:hover
+{
+  background: none;
+  transition-duration: 0.4s;
+}
+
+#supot:hover
+{
+  color: crimson;
+}
+
+#coinlog:hover
+{
+  color: #a259ff;
+}
+
+#coinlog
+{
+  background: #a259ff;
+  border: 2px solid #a259ff;
+  border-radius: 5px;
+  color: #fff;
+  font: 700;
+  font-family: bold;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.vdiv 
+{
+  transition-duration: 0.5s;
+  background: var(--c);
+  --c: #33333333;
+}
+
+.vdiv0
+{
+  transition-duration: 0.5s;
+  background: var(--cs);
+  --cs: white;
+}
